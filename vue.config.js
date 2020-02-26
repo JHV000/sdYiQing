@@ -6,7 +6,7 @@ const path = require('path');
 // const HtmlWebpackInlinePlugin = require('html-webpack-inline-plugin')
 // 引用 npm filemanager-webpack-plugin包，用来操作文件，允许复制，归档成 (.zip/.tar/.tar.gz)，移动，删除文件和目录在构建前或者构建前， 文档地址：https://www.npmjs.com/package/filemanager-webpack-plugin
 // const FileManagerPlugin = require('filemanager-webpack-plugin')
-// 判断时候是生产环境
+// 判断是否为生产环境
 const isProd = process.env.NODE_ENV === 'production';
 // 定义一些公用参数，以供项目中使用
 const pluginOptions = {
