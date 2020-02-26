@@ -1,13 +1,13 @@
 // 引用 npm ip包，用来获取本地ip等操作，文档地址：https://www.npmjs.com/package/ip
-const ip = require('ip')
+const ip = require('ip');
 // 引用path包(path属于node自带包，无需在package.json中引用安装即可直接引用)，用来操作路径，文档地址：https://nodejs.org/docs/latest/api/path.html
-const path = require('path')
+const path = require('path');
 // 引用 npm html-webpack-inline-plugin包，用来将html中inline标识的<script>,<link>,<img>标签的元素内容压缩进html中
 // const HtmlWebpackInlinePlugin = require('html-webpack-inline-plugin')
 // 引用 npm filemanager-webpack-plugin包，用来操作文件，允许复制，归档成 (.zip/.tar/.tar.gz)，移动，删除文件和目录在构建前或者构建前， 文档地址：https://www.npmjs.com/package/filemanager-webpack-plugin
 // const FileManagerPlugin = require('filemanager-webpack-plugin')
 // 判断时候是生产环境
-const isProd = process.env.NODE_ENV === 'production'
+const isProd = process.env.NODE_ENV === 'production';
 // 定义一些公用参数，以供项目中使用
 const pluginOptions = {
   // 项目名，定义成我们在云平台申请的应用名，类似 ***.vivo.com.cn
